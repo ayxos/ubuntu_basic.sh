@@ -3,8 +3,6 @@ ubuntu_basic.sh
 
 init script for node/ubuntu users
 
-# Bash Batch Install Basics
-
 A bash script to install all your essential basics on a fresh Ubuntu install.
 
 First open the ```installs.sh``` file in a text editor, take a look at the array of apps, you can add or edit the list according to your needs.
