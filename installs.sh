@@ -74,7 +74,8 @@ if [ ! -d ~/.config/sublime-text* ]; then
   sudo add-apt-repository ppa:webupd8team/sublime-text-2
   sudo apt-get update
   sudo apt-get install sublime-text
-  echo "alias sbl=\"sublime-text &\"" >> ~/.zshrc
+  #only for zsh and you can add "&"
+  echo "alias sbl=\"sublime-text\"" >> ~/.zshrc
 else
   echo "sublime is already installed"
 fi
