@@ -1,7 +1,7 @@
-ubuntu_basic.sh
-===============
+Ubuntu_server_basic
+===================
 
-init script for node/ubuntu users
+init script for node/ubuntu servers
 
 A bash script to install all your essential basics on a fresh Ubuntu install.
 
@@ -26,14 +26,11 @@ Execute it!:
     2.git - (generate rsa_key if does not exist)
     3.htop
     4.curl
-    5.gparted
-    6.terminator
-    7.nodejs - grunt
-    8.zsh - Oh-my-zsh
-    9.sublime-text (Also Package installer)
-    10.mongodb
+    5.nodejs - grunt
+    6.zsh - Oh-my-zsh
+    7.mongodb
+    8.fail2ban
 
 #Features
     - Oh-my-zsh aliases
-    - sublime plugins
     - iptables

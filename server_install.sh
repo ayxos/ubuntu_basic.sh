@@ -7,17 +7,7 @@ vim
 git
 htop
 curl
-gparted
-terminator
 zsh
-
-)
-
-# Array of sublime plugins
-sublimeplugs=(
-
-git://github.com/SublimeCodeIntel/SublimeCodeIntel.git
-https://github.com/facelessuser/BracketHighlighter.git
 
 )
 
@@ -33,7 +23,6 @@ if [ ! -d ~/.npm/ ]; then
   sudo apt-get install python-software-properties python g++ make
   sudo apt-get install nodejs
   #install npm grunt global cli
-  sudo npm install -g grunt-cli
 else
   echo "node is already installed"
 fi
@@ -66,33 +55,11 @@ else
   cat ~/.ssh/id_rsa.pub
 fi
 
-
-#install sublime-text if not exist
-if [ ! -d ~/.config/sublime-text* ]; then
-  #test if already exist
-  echo "sublime is not installed"
-  sudo add-apt-repository ppa:webupd8team/sublime-text-2
-  sudo apt-get update
-  sudo apt-get install sublime-text
-  #only for zsh and you can add "&"
-  echo "alias sbl=\"sublime-text\"" >> ~/.zshrc
-else
-  echo "sublime is already installed"
-fi
-
-#install sublime package-installer
-if [ -d ~/.config/sublime-text* ]; then
-  #test if already exist
-  wget https://sublime.wbond.net/Package%20Control.sublime-package
-  mv *.sublime-package ~/.config/sublime-text-2/Installed\ Packages
-  #for plug in "${sublimeplugs[@]}"
-  #do
-#	git clone $plug sublime
-  #done
-fi
-
 sudo npm install -g grunt-cli
 sudo apt-get install mongodb
+
+#server firewall
+apt-get install fail2ban
 
 #aplying iptables
 sudo iptables-restore < iptables.rules
